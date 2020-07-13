@@ -2,160 +2,19 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	margin:0;
 	padding:0;
 }
-html,body {
-	margin:0;
-	padding:0;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img { 
-    border:0;
-}
-input{
-	border:1px solid #b0b0b0;
-	padding:3px 5px 4px;
-	color:#979797;
-	width:190px;
-}
-address,caption,cite,code,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-ol,ul {
-	list-style:none;
-}
-caption,th {
-	text-align:left;
-}
 h1,h2,h3,h4,h5,h6 {
 	font-size:100%;
 	font-weight:normal;
 }
-q:before,q:after {
-	content:'';
-}
-abbr,acronym { 
-    border:0;
-}
 
-/* General Demo Style */
-body{
-	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	background: #000;
-	font-weight: 400;
-	font-size: 15px;
-	color: #aa3e03;
+.background {
 	overflow-y: scroll;
-	overflow-x: hidden;
-}
-.ie7 body{
-	overflow:hidden;
+    overflow-x: hidden;
 }
 a{
 	color: #333;
 	text-decoration: none;
 }
-.container{
-	position: relative;
-	text-align: center;
-}
-.clr{
-	clear: both;
-}
-
-/* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
-}
-html,body {
-	margin:0;
-	padding:0;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img { 
-	border:0;
-}
-input{
-	border:1px solid #b0b0b0;
-	padding:3px 5px 4px;
-	color:#979797;
-	width:190px;
-}
-address,caption,cite,code,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-ol,ul {
-	list-style:none;
-}
-caption,th {
-	text-align:left;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
-}
-q:before,q:after {
-	content:'';
-}
-abbr,acronym { 
-	border:0;
-}
-
-/* General Demo Style */
-body{
-	background: #000;
-	font-weight: 400;
-	font-size: 15px;
-	color: #aa3e03;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
-
-.ie7 body{
-	overflow:hidden;
-}
-a{
-	color: #333;
-	text-decoration: none;
-}
-.container{
-	position: relative;
-	text-align: center;
-}
-.clr{
-	clear: both;
-}
-.container > header{
-	padding: 30px 30px 10px 20px;
-	margin: 0px 20px 10px 20px;
-	position: relative;
-	display: block;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    text-align: left;
-}
-.container > header h1{
-	font-size: 35px;
-	line-height: 35px;
-	position: relative;
-	font-weight: 400;
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    padding: 0px 0px 5px 0px;
-}
-.container > header h2, p.info{
-	font-size: 16px;
-	font-style: italic;
-	color: #f8f8f8;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-}
-
 /* Media Queries */
 @media screen and (max-width: 767px) {
 	.container > header{
@@ -167,7 +26,6 @@ a{
 		left: auto;
 	}
 }
-
 .cb-slideshow,
 .cb-slideshow:after { 
     position: fixed;
@@ -175,10 +33,9 @@ a{
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: -1; 
-    filter: brightness(60%);
+    z-index: -1;
+    filter: brightness(50%);
 }
-
 .cb-slideshow li span { 
     width: 100%;
     height: 100%;
@@ -190,12 +47,11 @@ a{
     background-position: 50% 50%;
     background-repeat: none;
     opacity: 0;
-    z-index: -1;
-    -webkit-animation: imageAnimation 36s linear infinite 0s;
-    -moz-animation: imageAnimation 36s linear infinite 0s;
-    -o-animation: imageAnimation 36s linear infinite 0s;
-    -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s; 
+    -webkit-animation: imageAnimation 30s linear infinite 0s;
+    -moz-animation: imageAnimation 30s linear infinite 0s;
+    -o-animation: imageAnimation 30s linear infinite 0s;
+    -ms-animation: imageAnimation 30s linear infinite 0s;
+    animation: imageAnimation 30s linear infinite 0s; 
 }
 .cb-slideshow li div { 
     z-index: 1000;
@@ -206,16 +62,31 @@ a{
     text-align: center;
     opacity: 0;
     color: #fff;
-    -webkit-animation: titleAnimation 36s linear infinite 0s;
-    -moz-animation: titleAnimation 36s linear infinite 0s;
-    -o-animation: titleAnimation 36s linear infinite 0s;
-    -ms-animation: titleAnimation 36s linear infinite 0s;
-    animation: titleAnimation 36s linear infinite 0s; 
+    -webkit-animation: titleAnimation 30s linear infinite 0s;
+    -moz-animation: titleAnimation 30s linear infinite 0s;
+    -o-animation: titleAnimation 30s linear infinite 0s;
+    -ms-animation: titleAnimation 30s linear infinite 0s;
+    animation: titleAnimation 30s linear infinite 0s; 
 }
+
+.button { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    -webkit-animation: titleAnimation 30s linear infinite 0s;
+    -moz-animation: titleAnimation 30s linear infinite 0s;
+    -o-animation: titleAnimation 30s linear infinite 0s;
+    -ms-animation: titleAnimation 30s linear infinite 0s;
+    animation: titleAnimation 30s linear infinite 0s; 
+}
+
 .cb-slideshow li div h3 {
     font-size: 240px;
     padding: 0;
-    line-height: 200px; 
+    line-height: 200px;
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../../assets/Botany-Entrance.jpg);
@@ -252,7 +123,6 @@ a{
     -ms-animation-delay: 24s;
     animation-delay: 24s; 
 }
-
 .cb-slideshow li:nth-child(2) div { 
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
