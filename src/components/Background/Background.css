@@ -11,7 +11,7 @@ table {
 	border-spacing:0;
 }
 fieldset,img { 
-	border:0;
+    border:0;
 }
 input{
 	border:1px solid #b0b0b0;
@@ -36,7 +36,8 @@ h1,h2,h3,h4,h5,h6 {
 q:before,q:after {
 	content:'';
 }
-abbr,acronym { border:0;
+abbr,acronym { 
+    border:0;
 }
 
 /* General Demo Style */
@@ -174,7 +175,8 @@ a{
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 0; 
+    z-index: -1; 
+    filter: brightness(60%);
 }
 
 .cb-slideshow li span { 
@@ -188,7 +190,7 @@ a{
     background-position: 50% 50%;
     background-repeat: none;
     opacity: 0;
-    z-index: 0;
+    z-index: -1;
     -webkit-animation: imageAnimation 36s linear infinite 0s;
     -moz-animation: imageAnimation 36s linear infinite 0s;
     -o-animation: imageAnimation 36s linear infinite 0s;
@@ -216,7 +218,7 @@ a{
     line-height: 200px; 
 }
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../../assets/Botany-Entrance.jpg) 
+    background-image: url(../../assets/Botany-Entrance.jpg);
 }
 .cb-slideshow li:nth-child(2) span { 
     background-image: url(../../assets/Botany-Upstairs.png);
