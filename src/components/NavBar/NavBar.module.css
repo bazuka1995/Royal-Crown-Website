@@ -1,0 +1,39 @@
+.NavBar {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+li a {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  text-align: center;
+  padding: 17px 50px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #bd7626;
+  margin: auto;
+}
+
+li a:hover {
+  background-color: #de8642;
+  color: white;
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+img {
+  padding: 10px;
+}
