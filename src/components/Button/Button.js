@@ -17,7 +17,12 @@ const button = (props) => {
       className={classes.Div}
       whileHover={{ scale: 1.3 }}
       whileTap={{ scale: 0.8 }}
-    > <Button className={classes.Button}>{ props.label }</Button>
+    > 
+      <Button className={classes.Button} link={props.link}> 
+        <span>
+          { props.label }
+        </span>
+      </Button>
     </motion.div>
   );
 };

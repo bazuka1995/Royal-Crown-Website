@@ -71,9 +71,10 @@ a{
 }
 
 .cb-slideshow li div h3 {
-    font-size: 240px;
+    font-size: 150px;
     padding: 0;
-    line-height: 200px;
+    line-height: 60px;
+    color: rgba(224, 222, 222, 0.712);
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(../../assets/Commercial.jpg);
