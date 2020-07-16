@@ -1,4 +1,15 @@
+.Div {
+  position: absolute;
+  top: 570px;
+  left: 44%;
+  width: 180px;
+  height: 85px;
+  background: transparent;
+  border-radius: 40px;
+  text-align: center;
+}
+
 .Button {
-    position: absolute;
-    z-index: 1000;
+    width: 100%;
+    height: 100%;
 }
