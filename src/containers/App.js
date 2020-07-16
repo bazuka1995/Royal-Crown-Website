@@ -3,14 +3,18 @@ import classes from './App.module.css';
 import NavBar from '../components/NavBar/NavBar'
 import Background from '../components/Background/Background';
 import Button from "../components/Button/Button";
+import HomeInfo from "../components/HomeInfo/HomeInfo"
 
 function App() {
   return (
     <div className={classes.App}>
-      <Background />
-      <NavBar />
       <div>
+        <Background />
+        <NavBar />
         <Button label="Commercial"/>
+      </div>
+      <div>
+        <HomeInfo />
       </div>
     </div>
   );
