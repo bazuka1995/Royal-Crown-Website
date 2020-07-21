@@ -13,17 +13,71 @@ const button = (props) => {
   `;
 
   return (
-    <motion.div
-      className={classes.Div}
-      whileHover={{ scale: 1.3 }}
-      whileTap={{ scale: 0.8 }}
-    > 
-      <Button className={classes.Button} link={props.link}> 
-        <span>
-          { props.label }
-        </span>
-      </Button>
-    </motion.div>
+    <div>
+      <ul className={classes.cbSlideshow}>
+
+        <li>
+            <motion.div
+              className={classes.Div}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              <Button className={classes.Button} link={props.link}>
+                <span>Commercial</span>
+              </Button>
+            </motion.div>
+        </li>
+
+        <li>
+            <motion.div
+              className={classes.Div}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              <Button className={classes.Button} link={props.link}>
+                <span>Industrial</span>
+              </Button>
+            </motion.div>
+        </li>
+
+        <li>
+            <motion.div
+              className={classes.Div}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              <Button className={classes.Button} link={props.link}>
+                <span>Residential</span>
+              </Button>
+            </motion.div>
+        </li>
+
+        <li>
+            <motion.div
+              className={classes.Div}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              <Button className={classes.Button} link={props.link}>
+                <span>Tenants</span>
+              </Button>
+            </motion.div>
+        </li>
+
+        <li>
+            <motion.div
+              className={classes.Div}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+            >
+              <Button className={classes.Button} link={props.link}>
+                <span>Contact Us</span>
+              </Button>
+            </motion.div>
+        </li>
+
+      </ul>
+    </div>
   );
 };
 
